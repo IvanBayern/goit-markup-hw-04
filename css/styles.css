@@ -86,7 +86,7 @@ ul
     display: flex;
     align-items: center;
     }  
-    
+
 .header-link {
     margin-right: 93px;
     }
@@ -145,6 +145,12 @@ ul
     letter-spacing: 0.02em; 
     color: #757575;   
    }
+.email-icon {
+    width: 1rem;
+    height: 0.75rem;
+    fill: currentColor;
+    margin-right: 0.625rem;
+}
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
