@@ -30,6 +30,51 @@ body {
     letter-spacing: 0.03em;
     color:var(--gray-txt-cl);
     }
+        html {
+            box-sizing: border-box;
+        }
+    
+        *,
+        *::after,
+        *::before {
+            box-sizing: inherit;
+        }
+    
+        /* Стили для обнуления верхних отступов у элементов */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            margin-top: 0;
+        }
+    
+        /* Класс для обнуления базовых свойств у списков (ul) */
+        .list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+    
+        /* Класс для обнуления базовых свойств у ссылок */
+        .link {
+            text-decoration: none;
+            color: inherit;
+        }
+    
+        /* Свойства для корректного отображения картинок */
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    
+        /* Свойства для обнуления курсива у address */
+        address {
+            font-style: normal;
+        }
 h1, 
 h2, 
 h3, 
@@ -408,22 +453,59 @@ address
 .footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
-.footer-social-list {
-   
-
+.footer-social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    }
+.footer-social-link:hover,
+.footer-social-link:focus {
+    border-radius: 50%;
+    background-color: var(--blu-cl);
+    
 }
+
+.footer-social-list {
+        display: flex;
+        width: 206px;
+        height: 44px;
+        justify-content: space-between;
+        
+    }
+  
 .footer-social-link { 
     color: var(--white-txt-cl);
+     
+}
     
-
-}
-.footer-social-link:hover .footer-social-icon {
-    fill: var(--blu-cl);
-    padding: 0.3125rem;
-
-}
 .footer-social-icon {
     height: 1.25rem;
     width: 1.25;
+    fill: currentColor;  
+}
+.footer-social-icon:hover{
     fill: currentColor;
+}
+.footer-contakt {
+    margin-right: 70px;
+}
+
+.footer-flex {
+    display: flex;
+    align-items:center;
+}
+.footer-edd{
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-txt-cl);
+    
+
 }
