@@ -557,7 +557,7 @@ address
     }
 .footer-social-link:hover,
 .footer-social-link:focus {
-    border-radius: 50%;
+    
     background-color: var(--blu-cl);
     
 }
